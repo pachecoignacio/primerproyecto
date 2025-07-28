@@ -1,0 +1,239 @@
+// Importar variables desde _general.scss
+// La ruta es relativa desde _base-styles.scss hasta _general.scss
+@use "partials/components/_general.scss" as *;
+
+// Estilos generales (body, html, etc.)
+body {
+    font-family: $fuente-principal;
+    margin: 0;
+    background-color: $color-negro-brillante;
+    color: $color-texto-claro;
+}
+
+// Estilos del Navbar
+.navbar {
+    background-color: $color-navbar-fondo;
+    box-shadow: 0 2px 5px $sombra-navbar;
+
+    .navbar-nav {
+        .nav-link {
+            color: $color-texto-claro;
+            padding: 10px 15px;
+            border-radius: $border-radius-base;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+
+            &:hover {
+                background-color: $color-plata-hover;
+                color: $color-texto-oscuro;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 10px $sombra-card;
+                border-radius: 12px;
+            }
+        }
+    }
+
+    .navbar-brand {
+        color: $color-texto-claro !important; // Mantenemos !important si es necesario por Bootstrap
+        font-weight: bold;
+    }
+}
+
+// Estilos específicos para la página de Contactos
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+
+    h1 {
+        color: $color-cian-brillante;
+        margin-bottom: $margin-bottom-lg;
+        font-size: $fs-h1;
+    }
+
+    .lead {
+        margin-bottom: $margin-bottom-lg * 2; // Ajustar según Bootstrap mb-5
+    }
+}
+
+.contact-info-card,
+.contact-form-card {
+    background-color: $color-azul-grisaceo-card;
+    color: $color-texto-claro;
+    padding: 30px;
+    border-radius: $border-radius-card;
+    box-shadow: 0 5px 15px $sombra-card;
+    height: 100%;
+
+    h2 {
+        color: $color-amarillo-oro;
+        margin-bottom: 25px;
+        font-size: $fs-h2;
+    }
+
+    p {
+        font-size: $fs-p-card;
+        line-height: 1.6;
+    }
+
+    .icon-text {
+        display: flex;
+        align-items: center;
+        margin-bottom: $margin-bottom-sm;
+        font-size: $fs-icon-text;
+
+        i {
+            color: $color-cian-brillante;
+            margin-right: $margin-bottom-sm;
+            font-size: $fs-icon-general;
+            width: 30px;
+            text-align: center;
+        }
+    }
+}
+
+.social-icons {
+    a {
+        color: $color-texto-claro;
+        font-size: $fs-icon-social; // Ajustado para un mejor tamaño
+        margin: 0 15px;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $color-amarillo-oro;
+        }
+    }
+}
+
+// Estilos para el formulario
+.form-label {
+    color: $color-texto-claro;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    text-align: left;
+}
+
+.form-control {
+    background-color: $color-negro-brillante;
+    border: 1px solid $color-borde-input;
+    color: $color-texto-claro;
+    border-radius: $border-radius-base;
+    padding: $padding-input;
+    margin-bottom: $margin-bottom-md;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:focus {
+        background-color: $color-negro-brillante;
+        border-color: $color-cian-brillante;
+        box-shadow: 0 0 0 0.25rem $sombra-enfoque-cian;
+        color: $color-texto-claro;
+    }
+
+    &::placeholder {
+        color: $color-placeholder;
+    }
+}
+
+textarea.form-control {
+    min-height: $min-height-textarea;
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: $color-amarillo-oro;
+    color: $color-texto-oscuro;
+    border: none;
+    padding: 12px 30px;
+    border-radius: $border-radius-base;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        background-color: $color-amarillo-oro-hover; // Usando la variable de hover
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px $sombra-card;
+    }
+}
+
+// Estilos para el mapa (opcional)
+.map-container {
+    border-radius: $border-radius-card;
+    overflow: hidden;
+    margin-top: 40px;
+    box-shadow: 0 5px 15px $sombra-card;
+
+    iframe {
+        width: 100%;
+        height: $height-carousel-map;
+        border: 0;
+    }
+}
+
+// Estilos de las cards de soluciones (de tu index.html)
+.card-soluciones {
+    border: 1px solid $color-negro-brillante; // Ajustado a color de paleta
+    background-color: $color-azul-grisaceo-card; // Ajustado a color de paleta
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    border-radius: $border-radius-base;
+    padding: 16px;
+    width: 300px; // Considerar hacer esto responsivo con Bootstrap
+    margin: 0 auto; // Centrar si no está en un grid/flex
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: $border-radius-base;
+    }
+
+    h2 {
+        color: $color-texto-claro; // Ajustado a color de paleta
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: $color-texto-claro; // Ajustado a color de paleta
+        font-size: 16px;
+    }
+}
+
+// Estilos para los botones "Ver más" (btn-more)
+.btn-more {
+    padding: $padding-base;
+    border: none;
+    border-radius: 5px; // No hay variable para 5px, se mantiene
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: $margin-top-button; // Usando la variable de margen
+    background-color: $color-amarillo-oro; // Color que usamos para botones
+    color: $color-texto-oscuro; // Texto oscuro para contraste
+}
+
+// Si tienes estilos para .blog-cards o .blog-card, agrégalos aquí
+// .blog-cards { /* ... */ }
+// .blog-card { /* ... */ }
+
+// Estilos del carrusel (si los tenías en tu style.css)
+.carousel-item img {
+    width: 100%;
+    height: $height-carousel-map; // Reutilizamos la variable de altura
+    object-fit: cover;
+    border-radius: $border-radius-card;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 10px;
+
+    h5 {
+        color: $color-cian-brillante;
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 15px;
+}

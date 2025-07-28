@@ -1,0 +1,44 @@
+// Colores de la paleta
+ // Colores de la paleta
+    $color-negro-brillante: #1A1A1A;
+    $color-texto-claro: #F2F2F2; // Plata brillante
+    $color-navbar-fondo: #333333;
+    $color-plata-hover: #B0B0B0; // Plata brillante para hover
+    $color-texto-oscuro: #1A1A1A; // Para texto sobre fondos claros
+    $color-azul-grisaceo-card: #2C3E50;
+    $color-cian-brillante: #00FFFF;
+    $color-amarillo-oro: #FFD700;
+    $color-amarillo-oro-hover: darken($color-amarillo-oro, 10%); // ¡Asegúrate de que este 10% esté aquí!
+    $color-borde-input: #444444;
+    $color-placeholder: #888888;
+
+    // Sombras
+    $sombra-navbar: rgba(0, 0, 0, 0.3);
+    $sombra-card: rgba(0, 0, 0, 0.4);
+    $sombra-enfoque-cian: rgba(0, 255, 255, 0.25);
+
+    // Fuentes
+    $fuente-principal: 'Inter', sans-serif;
+
+    // Tamaños de fuente comunes
+    $fs-base: 1em;
+    $fs-h1: 3em;
+    $fs-h2: 1.8em;
+    $fs-p-card: 1.1em;
+    $fs-icon-text: 1.1em;
+    $fs-icon-general: 1.5em;
+    $fs-icon-social: 2.5em;
+
+    // Espaciados y tamaños
+    $padding-base: 10px 20px;
+    $padding-input: 12px;
+    $border-radius-base: 8px;
+    $border-radius-card: 15px;
+    $min-height-textarea: 120px;
+    $height-carousel-map: 400px;
+    $height-logo-navbar: 40px;
+    $margin-bottom-sm: 15px; // Para mb-3 de Bootstrap
+    $margin-bottom-md: 20px; // Para mb-4 de Bootstrap
+    $margin-bottom-lg: 30px; // Para mb-5 de Bootstrap
+    $margin-top-button: 15px; // Para los botones de las cards
+    
