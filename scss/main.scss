@@ -1,4 +1,18 @@
 
-    @use "partials/components/_general.scss" as *;
-
-    @use "base-styles";
+    @use "partials/components/_general.scss";
+    @use "partials/base/_tipografia.scss";
+    @use "partials/components/cards";
+    @use "partials/base/_reset.scss";
+    @use "partials/components/_blog.scss";
+    @use "partials/components/_contactos.scss";
+    @use "partials/components/_footer.scss";
+    @use "partials/components/_header.scss";
+    @use "partials/components/_servicios.scss";
+    @use "partials/components/_soluciones.scss";
+    @use "partials/components/_index.scss";
+    @use "partials/components/_botones.scss";
+    
+    // utilities
+    @use "partials/utilities/_variables.scss";
+    @use "partials/utilities/_mixins.scss";
+    @use "partials/utilities/_extends.scss";

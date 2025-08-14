@@ -1,0 +1,87 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+.card-container{
+    margin: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    background-color: #2c3e50;
+    width: 300px;
+
+    img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+}
+
+.card-soluciones {
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    background-color: #364e65;
+    width: 300px;
+    justify-content: space-between;
+    flex-direction: row;
+    row-gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    h2{
+        color: rgb(255, 85, 0);
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    }
+    img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    }
+}
+
+
+.card-blog{
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    background-color: rgb(113, 103, 93);
+    width: 300px;
+
+    img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+}
+
+
+.card-text {
+    color: rgb(60, 56, 56);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+.blog-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin: 20px;   
+}

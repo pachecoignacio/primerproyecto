@@ -1,0 +1,89 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+
+.section-soluciones{
+    @include mixins.flex(column, center, center);
+    margin: 20px;
+
+    p{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h2{
+        color: rgb(52, 80, 52);
+        font-size: 30px;
+    }
+}
+
+.soluciones{
+    margin: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+.ul-cloud {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        margin: 5px 0;
+        }
+}
+
+.ul-redes {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        margin: 5px 0;
+        }
+}
+
+.ul-infraestructura {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {    
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        margin: 5px 0;
+        }
+}
+
+.ul-ciber {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        margin: 5px 0;
+        }
+}
+
+.Conectividad
+{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+
+}
