@@ -15,22 +15,76 @@
     border-radius: 8px;
     object-fit: cover;
 }
-.carousel-caption 
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+
     h5 {
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+    }
+    
     p {
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-}
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    li {
+        color: #fff;
+        margin-bottom: 5px;
+    }
+
+    .btn {
+        margin-top: 15px;
+    }
 }
 
-
-.carousel slide {
+.carousel.slide { 
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.resumen-servicios {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    .row {
+        align-items: center;
+    }
+
+    .resumen-texto {
+        flex: 0 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+
+    .resumen-imagen {
+        flex: 0 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+
+    h2 {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    
+    img {
+        border-radius: 8px;
+    }
 }

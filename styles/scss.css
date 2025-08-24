@@ -310,21 +310,67 @@ h1 {
   object-fit: cover;
 }
 
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
 .carousel-caption h5 {
   color: rgb(255, 255, 255);
   font-size: 24px;
 }
-.carousel-caption h5 p {
+.carousel-caption p {
   color: rgb(255, 255, 255);
   font-size: 18px;
 }
+.carousel-caption ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+}
+.carousel-caption li {
+  color: #fff;
+  margin-bottom: 5px;
+}
+.carousel-caption .btn {
+  margin-top: 15px;
+}
 
-.carousel slide {
+.carousel.slide {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.resumen-servicios {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.resumen-servicios .row {
+  align-items: center;
+}
+.resumen-servicios .resumen-texto {
+  flex: 0 0 auto;
+  width: 50%;
+  text-align: center;
+}
+.resumen-servicios .resumen-imagen {
+  flex: 0 0 auto;
+  width: 50%;
+  text-align: center;
+}
+.resumen-servicios h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.resumen-servicios p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.resumen-servicios img {
+  border-radius: 8px;
 }
 
 .section-soluciones {
@@ -405,6 +451,37 @@ h1 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
+}
+
+.soluciones-proceso {
+  padding: 100px 0;
+}
+.soluciones-proceso h2 {
+  text-align: left;
+  margin-bottom: 80px;
+  color: rgb(255, 85, 0);
+}
+.soluciones-proceso .proceso-paso {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+  color: #dee2e6;
+}
+
+.soluciones-por-que {
+  padding: 60px 0;
+  background-color: #343a40;
+  color: #fff;
+  text-align: right;
+}
+.soluciones-por-que h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: rgb(255, 85, 0);
+}
+.soluciones-por-que .por-que-punto {
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .claro-logo {
