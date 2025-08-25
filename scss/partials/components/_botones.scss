@@ -9,11 +9,13 @@
     margin-top: 15px;
     
 }
+
 .btn-more:hover{
     color: rgb(255, 85, 0);
     background-color: rgb(255, 255, 255);
     box-shadow: 0 4px 10px rgba(138, 138, 137, 0.95);
 }
+
 .btn-more {
     color: rgb(255, 85, 0);
     background-color: white;
@@ -22,6 +24,7 @@
     @extend %botton; 
 
 } 
+
 .btn-read{
     @extend %botton; 
     background-color: rgb(0, 0, 0);
@@ -29,6 +32,7 @@
     border: none;
     cursor: pointer;
 }
+
 .btn.btn-primary{
     background-color: rgb(255, 85, 0);
     border: none;
@@ -36,6 +40,7 @@
     @extend %botton; 
 
 }
+
 .btn.btn-submit {
     background-color: rgb(255, 85, 0);
     color: white;
@@ -51,13 +56,9 @@
     border: none;
     cursor: pointer;
     @extend %botton; 
-
 }
 
 @media (max-width: 450px) {
-    
-    
-    
     .btn-more, .btn-read {
         width: 100%;
         text-align: center;

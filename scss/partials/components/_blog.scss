@@ -10,10 +10,21 @@
     display: flex;
     justify-content: center;
 }
+
 .section-blog{
     @include mixins.flex(column, center, center);
     margin: 20px;
+    
 }
+.blog-header-img {
+    width: 60%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+}
+
 .blog-container{
     @include mixins.flex(column, center, center);
     margin: 20px;
@@ -23,7 +34,6 @@
 .form-blog{
     @include mixins.flex(column, center, center);
     margin: 20px;
-
     button{
             background-color: rgb(254, 150, 4);
             color: white;
